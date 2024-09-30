@@ -6,7 +6,7 @@
 
 
 # 后台IP设置
-export Ipv4_ipaddr="10.0.0.1"            # 修改openwrt后台地址(填0为关闭)
+export Ipv4_ipaddr="10.0.0.4"            # 修改openwrt后台地址(填0为关闭)
 export Netmask_netm="255.255.255.0"         # IPv4 子网掩码（默认：255.255.255.0）(填0为不作修改)
 export Op_name="OpenWrt"                # 修改主机名称为OpenWrt-123(填0为不作修改)
 
@@ -19,7 +19,7 @@ export Mandatory_theme="argon"              # 将bootstrap替换您需要的主�
 export Default_theme="argon"                # 多主题时,选择某主题为默认第一主题 (填写主题名称,填0为不作修改)
 
 # 旁路由选项
-export Gateway_Settings="10.0.0.4"                 # 旁路由设置 IPv4 网关(填入您的网关IP为启用)(填0为不作修改)
+export Gateway_Settings="10.0.0.1"                 # 旁路由设置 IPv4 网关(填入您的网关IP为启用)(填0为不作修改)
 export DNS_Settings="0"                     # 旁路由设置 DNS(填入DNS，多个DNS要用空格分开)(填0为不作修改)
 export Broadcast_Ipv4="0"                   # 设置 IPv4 广播(填入您的IP为启用)(填0为不作修改)
 export Disable_DHCP="1"                     # 旁路由关闭DHCP功能(1为启用命令,填0为不作修改)
@@ -96,6 +96,14 @@ profiles.json
 openwrt-x86-64-generic-kernel.bin
 openwrt-x86-64-generic.manifest
 openwrt-x86-64-generic-squashfs-rootfs.img.gz
+09.30-Official-22.03-5.10.221-x86-64-generic-ext4-combined.img
+09.30-Official-22.03-5.10.221-x86-64-generic-ext4-combined.vmdk
+09.30-Official-22.03-5.10.221-x86-64-generic-ext4-combined-efi.img
+09.30-Official-22.03-5.10.221-x86-64-generic-ext4-rootfs.img
+09.30-Official-22.03-5.10.221-x86-64-generic-rootfs.tar
+09.30-Official-22.03-5.10.221-x86-64-generic-squashfs-combined.img
+09.30-Official-22.03-5.10.221-x86-64-generic-squashfs-combined-efi.img
+ipk.tar
 EOF
 
 # 在线更新时，删除不想保留固件的某个文件，在EOF跟EOF之间加入删除代码，记住这里对应的是固件的文件路径，比如： rm -rf /etc/config/luci
